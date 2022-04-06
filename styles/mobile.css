@@ -28,6 +28,10 @@ h3 {
   margin: 0 auto;
 }
 
+.section-title {
+  margin-top: 5%;
+}
+
 .separator {
   border-bottom: 1px solid;
   width: 100%;
@@ -137,47 +141,39 @@ nav .container {
   font-size: 24px;
 }
 
-/* OFFER styles */
+/* OFFER and PORTFOLIO styles */
 
-.offer-section .container {
+.offer-section .container, .portfolio-section .container, .about-section .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.section-title {
-  margin-top: 5%;
+.offer_list, .portfolio-list {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.offer-box {
+.offer-box, .portfolio-box {
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.offer-img {
-  display: block;
-  width: 100%;
+.offer-box img, .portfolio-box img {
+  max-width: 100%;
   margin: 0 auto;
   object-fit: contain;
 }
 
 /* PORTFOLIO styles */
-
-.portfolio-section .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/* are  declared in OFFER section*/
 
 /* ABOUT styles */
 
-.about-section .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/* .about-section .container style is declared in OFFER section */
 
 .about-img {
   max-width: 50%;
@@ -204,7 +200,7 @@ footer {
 }
 
 footer .container {
-  height: 200px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
