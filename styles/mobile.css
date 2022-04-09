@@ -168,6 +168,7 @@ nav .container {
 
 .offer-box, .portfolio-box {
   margin-bottom: 5%;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,6 +178,18 @@ nav .container {
   max-width: 100%;
   margin: 0 auto;
   object-fit: contain;
+}
+
+.see-more-text {
+  font-size: 16px;
+  text-align: center;
+  width: 50%;
+  padding: 3px;
+  background-color: white;
+  opacity: 0.7;
+  position: absolute;
+  top: 60%;
+  transition: .5s ease;
 }
 
 /* PORTFOLIO styles */

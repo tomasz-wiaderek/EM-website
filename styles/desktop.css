@@ -169,6 +169,10 @@ nav .container {
   opacity: 0.3;
 }
 
+.offer-box:hover .see-more-text {
+  opacity: 1;
+}
+
 /* PORTFOLIO styles */
 /* .portfolio-section .container style is declared in OFFER section*/
 
@@ -195,9 +199,9 @@ nav .container {
   opacity: 0.3;
 }
 
-/* .portfolio-box:hover .ins-img-text {
+.portfolio-box:hover .see-more-text {
   opacity: 1;
-} */
+}
 
 /* ABOUT styles */
 /* .about-section .container style is declared in OFFER section */
