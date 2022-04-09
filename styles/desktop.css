@@ -13,38 +13,70 @@ body {
 
 h1 {
   font-size: 28px;
-  margin-bottom: 40px;
 }
 
 h2 {
   font-size: 22px;
 }
 
-/* Navigation bar styles */
-
-.nav-footer-area {
-  padding: 20px;
-  background-color: #2b2b2b;
+h3 {
+  font-size: 18px;
 }
 
 .container {
-  width: 100%;
+  width: 960px;
   margin: 0 auto;
-  /* padding-left: 50px;
-  padding-right: 50px; */
 }
 
-nav .container, footer .container {
-  display:flex;
+@media (min-width: 2000px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.section-title {
+  margin-top: 5%;
+}
+
+.separator {
+  border-bottom: 1px solid;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+/* NAVIGATION BAR styles */
+
+nav, footer {
+  background-color: #2b2b2b;
+}
+
+nav .container {
+  height: 90px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
 }
 
 .nav-links {
   width: 35%;
   display: flex;
   justify-content: space-between;
+}
+
+.logo-a {
+  display: block;
+  max-height: 100%;
+}
+
+.logo-img {
+  max-width: 100%;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+.menu-label {
+  display: none;
 }
 
 .nav-link {
@@ -59,15 +91,14 @@ nav .container, footer .container {
   transform: scale(1.2);
 }
 
-.menu-btn {
-  display: none;
-}
-
-/* Landing page styles */
+/* LANDING PAGE styles */
 
 .landing-page {
-  height: calc(100vh - 100px);
-  background-image: url("C:\\Users\\twiad\\PycharmProjects\\fe_tutorial\\media\\backgrounds\\background.jpg");
+  height: calc(100vh - 90px);
+  background-image: url("C:\\Users\\twiad\\PycharmProjects\\EM-website\\media\\backgrounds\\background.jpg");
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
@@ -79,9 +110,6 @@ nav .container, footer .container {
 
 .landing-page-shadow .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
 }
 
 .landing-page-text {
@@ -91,6 +119,8 @@ nav .container, footer .container {
   justify-content: space-between;
   height: 28%;
   width: 75%;
+  padding-top: 15%;
+  padding-left: 5%;
   color: black;
   font-weight: bold;
 }
@@ -103,81 +133,134 @@ nav .container, footer .container {
   font-size: 24px;
 }
 
+/* OFFER and PORTFOLIO styles */
 
-.landing-page-text button {
-    background: none;
-    border: 1px solid;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: 1s all;
-}
-
-.landing-page-text button:hover {
-  transform: scale(1.1);
-}
-
-/* OFERTA section styles */
-
-.offer {
-  color: #2b2b2b;
-  padding: 3% 0;
-  background-color: white;
+.offer-section .container, .portfolio-section .container, .about-section .container, .contact-section .container {
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .offer-list {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .offer-box {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer-box h2 {
+  margin-top: 5px;
+}
+
+.image-a {
+  transition: .5s ease;
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.offer-box:hover .image-a {
+  opacity: 0.3;
+}
+
+/* PORTFOLIO styles */
+/* .portfolio-section .container style is declared in OFFER section*/
+
+.portfolio-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-box {
   width: 30%;
-  height: 150px;
-  margin-right: 5%;
-  margin-bottom: 5%;
-  background-position: center;
-  background-size: cover;
-  background-color: #2b2b2b;
+  margin-right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.offer_1 {
-  background-image: url("C:\\Users\\twiad\\PycharmProjects\\fe_tutorial\\media\\offer_1\\offer_1.png");
-}
-
-.offer_2 {
-  background-image: url("C:\\Users\\twiad\\PycharmProjects\\fe_tutorial\\media\\offer_2\\offer_2.png");
-}
-
-.offer_3 {
-  background-image: url("C:\\Users\\twiad\\PycharmProjects\\fe_tutorial\\media\\offer_3\\offer_3.png");
-}
-
-
-.offer-box:nth-of-type(3n) {
+.portfolio-box:nth-of-type(3n) {
   margin-right: 0;
 }
 
-/* FOOTER styles */
-
-footer {
-  color: white;
+.portfolio-box:hover .image-a {
+  opacity: 0.3;
 }
 
-/* footer .container settings are on the top of the file. */
+/* .portfolio-box:hover .ins-img-text {
+  opacity: 1;
+} */
 
-.footer-contact {
+/* ABOUT styles */
+/* .about-section .container style is declared in OFFER section */
+
+.about-img {
+  max-width: 50%;
+  margin-bottom: 5%;
+}
+
+.about-section h3 {
+  margin-bottom: 5%;
+}
+
+.about-section p {
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 1.3;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+/* CONTACT styles */
+/* .contact-section .container style is declared in OFFER section */
+
+.contact-section a {
+  color: #686867;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin: 7% auto;
+}
+
+
+/* FOOTER styles */
+/* footer style is declared in NAVIGATION BAR section */
+
+footer .container {
+  height: 50px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-contact, .footer-signature {
+  color: #686867;
   display: flex;
   flex-direction: column;
-}
-
-.footer-contact a {
-  color: white;
-  text-decoration: none;
+  align-items: flex-start;
 }
 
 .footer-signature {
-  display: flex;
-  flex-direction: column;
   align-items: flex-end;
+}
+
+.footer-contact a {
+  color: #686867;
+  text-decoration: none;
+}
+
+.footer-signature p {
+  font-size: 12px;
 }
 
 .footer-signature small {
