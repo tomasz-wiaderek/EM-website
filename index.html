@@ -81,56 +81,70 @@
       <div class="container">
         <h1 class="section-title">PORTFOLIO</h1>
         <div class="separator"></div>
+
         <div class="portfolio-list">
           <div class="portfolio-box">
-            <a href="#"><img class="image-a" src="media/modern_and_tender/tiny.png" alt="Zdjęcie miniatura pozycji w portfolio Modern & Tender"></a>
+            <img class="image-a" onclick="GalleryAgent.openGallery();GalleryAgent.setGallery(modernAndTender)" src="media/modern_and_tender/tiny.png" alt="Zdjęcie miniatura pozycji w portfolio Modern & Tender">
             <div class="see-more-text">ZOBACZ WIĘCEJ</div>
             <h2>MODERN & TENDER</h2>
             <p>Fuzja, Łódź</p>
           </div>
           <div class="portfolio-box">
-            <a href="#"><img class="image-a" src="media/blue_and_rustic/tiny.png" alt="Zdjęcie miniatura pozycji w portfolio Blue & Rustic"></a>
+            <img class="image-a" onclick="GalleryAgent.openGallery();GalleryAgent.setGallery(blueAndRustic)" src="media/blue_and_rustic/tiny.png" alt="Zdjęcie miniatura pozycji w portfolio Blue & Rustic">
             <div class="see-more-text">ZOBACZ WIĘCEJ</div>
             <h2>BLUE & RUSTIC</h2>
             <p>Karolew, Łódź</p>
           </div>
           <div class="portfolio-box">
-            <a href="#"><img class="image-a" src="media/green_patterns/1.png" alt="Zdjęcie miniatura pozycji w portfolio Green Patterns"></a>
+            <img class="image-a" onclick="GalleryAgent.openGallery();GalleryAgent.setGallery(blueAndRustic)" src="media/green_patterns/1.png" alt="Zdjęcie miniatura pozycji w portfolio Green Patterns">
             <div class="see-more-text">ZOBACZ WIĘCEJ</div>
             <h2>GREEN & PATTERNS</h2>
             <p>Neopolis, Łódź</p>
           </div>
           <div class="portfolio-box">
-            <a href="#"><img class="image-a" src="media/modern_vintage/1.png" alt="Zdjęcie miniatura pozycji w portfolio Modern Vintage"></a>
+            <img class="image-a" onclick="GalleryAgent.openGallery();GalleryAgent.setGallery(blueAndRustic)" src="media/modern_vintage/1.png" alt="Zdjęcie miniatura pozycji w portfolio Modern Vintage">
             <div class="see-more-text">ZOBACZ WIĘCEJ</div>
             <h2>MODERN VINTAGE</h2>
             <p>Rodzinne wnętrze, Konin</p>
           </div>
           <div class="portfolio-box">
-            <a href="#"><img class="image-a" src="media/green_peace/1.png" alt="Zdjęcie miniatura pozycji w portfolio Green Peace"></a>
+            <img class="image-a" onclick="GalleryAgent.openGallery();GalleryAgent.setGallery(blueAndRustic)" src="media/green_peace/1.png" alt="Zdjęcie miniatura pozycji w portfolio Green Peace">
             <div class="see-more-text">ZOBACZ WIĘCEJ</div>
             <h2>GREEN PEACE</h2>
             <p>Nowe Centrum Łodzi</p>
           </div>
           <div class="portfolio-box">
-            <a href="#"><img class="image-a" src="media/i_love_boho/1.png" alt="Zdjęcie miniatura pozycji w portfolio I Love Boho"></a>
+            <img class="image-a" onclick="GalleryAgent.openGallery();GalleryAgent.setGallery(blueAndRustic)" src="media/i_love_boho/1.png" alt="Zdjęcie miniatura pozycji w portfolio I Love Boho">
             <div class="see-more-text">ZOBACZ WIĘCEJ</div>
             <h2>I LOVE BOHO</h2>
             <p>Śródmieście, Łódź</p>
           </div>
           <div class="portfolio-box">
-            <a href="#"><img class="image-a" src="media/small_and_cute/1.png" alt="Zdjęcie miniatura pozycji w portfolio Small & Cute"></a>
+            <img class="image-a" onclick="GalleryAgent.openGallery();GalleryAgent.setGallery(blueAndRustic)" src="media/small_and_cute/1.png" alt="Zdjęcie miniatura pozycji w portfolio Small & Cute">
             <div class="see-more-text">ZOBACZ WIĘCEJ</div>
             <h2>SMALL & CUTE</h2>
             <p>Łódź</p>
           </div>
           <div class="portfolio-box">
-            <a href="#"><img class="image-a" src="media/loft_office/1.png" alt="Zdjęcie miniatura pozycji w portfolio Loft Office"></a>
+            <img class="image-a" onclick="GalleryAgent.openGallery();GalleryAgent.setGallery(blueAndRustic)" src="media/loft_office/1.png" alt="Zdjęcie miniatura pozycji w portfolio Loft Office">
             <div class="see-more-text">ZOBACZ WIĘCEJ</div>
             <h2>LOFT OFFICE</h2>
             <p>Centrum Łodzi</p>
           </div>
         </div>
+
+        <div class="gallery" id="gallery">
+          <div class="gallery-content">
+            <span class="close cursor" onclick="GalleryAgent.closeGallery()">&times;</span>
+            <div class="slide">
+              <img id="slideImg" src="">
+              <div class="dots-box" id="dots-box"></div>
+            </div>
+            <a class="prev" onclick="GalleryAgent.previousSlide()">&#10094;</a>
+            <a class="next" onclick="GalleryAgent.nextSlide()">&#10095;</a>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -170,10 +184,12 @@
       </div>
       <div class="footer-signature">
         <p>All rights reserved 2020 © EWELINA MEJSNER INTERIOR DESIGN & INVESTMENTS</p>
-        <small>Developed with <3 by Tomasz Wiaderek </small>
+        <small>Developed with ️❤️ by Tomasz Wiaderek </small>
       </div>
     </div>
   </footer>
+
+  <script type="module" src="./script/gallery_script.js"></script>
 
 </body>
 </html>
