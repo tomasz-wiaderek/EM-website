@@ -25,6 +25,12 @@ class PortfolioGallery {
 
 const modernAndTender = new PortfolioGallery(srcsModernAndTender)
 const blueAndRustic = new PortfolioGallery(srcsBlueAndRustic)
+const greenPatterns = new PortfolioGallery(srcsGreenPatterns)
+const modernVintage = new PortfolioGallery(srcsModernVintage)
+const greenPeace = new PortfolioGallery(srcsGreenPeace)
+const iLoveBoho = new PortfolioGallery(srcsILoveBoho)
+const smallAndCute = new PortfolioGallery(srcsSmallAndCute)
+const loftOffice = new PortfolioGallery(srcsLoftOffice)
 
 
 let GalleryAgent = {}
