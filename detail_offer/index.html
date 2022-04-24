@@ -21,27 +21,31 @@
   <header>
       <nav>
         <div class="container">
+
           <a class="logo-a" href="../index.html"><img class="logo-img" src="../media/logo_big.png" alt="Duże logo firmy EWELINA MEJSNER INTERIOR DESIGN & INVESTMENTS"></a>
 
-          <!-- desktop view -->
-          <div class="nav-links">
+          <!-- desktop view
+          nav-desktop {display: none} when min-width < 1024px -->
+          <div class="nav-desktop">
             <a class="nav-link" href="../index.html#offer">OFERTA</a>
             <a class="nav-link" href="../index.html#portfolio">PORTFOLIO</a>
             <a class="nav-link" href="../index.html#about">O MNIE</a>
             <a class="nav-link" href="../index.html#contact">KONTAKT</a>
           </div>
 
-          <!-- mobile view -->
-          <label class="menu-label">
-            <input class="nav-mobile-checkbox" type="checkbox">
-            <div class="nav-mobile">
-              <a class="nav-link" href="../index.html#offer">OFERTA</a>
-              <a class="nav-link" href="../index.html#portfolio">PORTFOLIO</a>
-              <a class="nav-link" href="../index.html#about">O MNIE</a>
-              <a class="nav-link" href="../index.html#contact">KONTAKT</a>
+          <!-- mobile view
+        menu-label {display: none} when width >= 1024px  -->
+          <div class="nav-mobile">
+            <img class="menu-btn" src="../media/menu.png" alt="Przycisk menu" onclick="navOpenClose()">
+             <div class="nav-mobile-shadow" id="nav-mobile-shadow">
+              <div class="nav-mobile-links">
+                <a class="nav-link" href="../index.html#offer" onclick="navOpenClose()">OFERTA</a>
+                <a class="nav-link" href="../index.html#portfolio" onclick="navOpenClose()">PORTFOLIO</a>
+                <a class="nav-link" href="../index.html#about" onclick="navOpenClose()">O MNIE</a>
+                <a class="nav-link" href="../index.html#contact" onclick="navOpenClose()">KONTAKT</a>
+              </div>
             </div>
-            <img class="menu-btn" src="../media/menu.png" alt="Przycisk menu">
-          </label>
+          </div>
 
         </div>
       </nav>
@@ -140,6 +144,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="../script/navigation_script.js"></script>
+
 
 </body>
 </html>
