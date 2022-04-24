@@ -169,6 +169,10 @@ nav .container {
   opacity: 0.3;
 }
 
+.see-more-text {
+  opacity: 0;
+}
+
 .offer-box:hover .see-more-text {
   opacity: 1;
 }
