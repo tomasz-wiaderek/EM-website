@@ -1,27 +1,5 @@
+
 /* main styles */
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Source Sans Pro', sans-serif, Arial, Verdana;
-  color: #686867;
-  background-color: #ffffff;
-  width: 100%;
-}
-
-h1 {
-  font-size: 28px;
-}
-
-h2 {
-  font-size: 22px;
-}
-
-h3 {
-  font-size: 18px;
-}
 
 .container {
   width: 960px;
@@ -35,38 +13,13 @@ h3 {
   }
 }
 
-.section-title {
-  margin-top: 5%;
-}
-
-.separator {
-  border-bottom: 1px solid;
-  width: 100%;
-  margin-bottom: 5%;
-}
 
 /* NAVIGATION BAR styles */
-
-nav, footer {
-  background-color: #2b2b2b;
-}
-
-nav .container {
-  height: 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .nav-desktop {
   width: 35%;
   display: flex;
   justify-content: space-between;
-}
-
-.logo-a {
-  display: block;
-  max-height: 100%;
 }
 
 .logo-img {
@@ -80,58 +33,14 @@ nav .container {
 }
 
 .nav-link {
-  text-decoration: none;
-  color: #686867;
   font-size: 18px;
-  font-weight: 200;
   transition: .5s all;
 }
 
-.nav-link:hover {
-  transform: scale(1.2);
-}
 
 /* LANDING PAGE styles */
 
-.landing-page {
-  height: calc(100vh - 90px);
-  background-image: url("C:\\Users\\twiad\\PycharmProjects\\EM-website\\media\\backgrounds\\background.jpg");
-  background-color: grey;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-
-.landing-page-shadow {
-  height: 100%;
-  background-color: rgba(0,0,0, .1);
-}
-
-.landing-page-shadow .container {
-  display: flex;
-}
-
-.landing-page-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  height: 28%;
-  width: 75%;
-  padding-top: 15%;
-  padding-left: 5%;
-  color: black;
-  font-weight: bold;
-}
-
-.landing-page-text h1 {
-  font-size: 36px;
-}
-
-.landing-page-text h2 {
-  font-size: 24px;
-}
+/* the same as mobile */
 
 /* OFFER and PORTFOLIO styles */
 
@@ -209,9 +118,6 @@ nav .container {
 }
 
 .gallery-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
   max-width: 900px;
   max-height: 90vh;
 }
@@ -233,10 +139,7 @@ nav .container {
 /* .contact-section .container style is declared in OFFER section */
 
 .contact-section a {
-  color: #686867;
   font-size: 24px;
-  letter-spacing: 2px;
-  text-decoration: none;
   margin: 7% auto;
 }
 
@@ -246,7 +149,6 @@ nav .container {
 
 footer .container {
   height: 50px;
-  margin-bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -271,8 +173,4 @@ footer .container {
 
 .footer-signature p {
   font-size: 12px;
-}
-
-.footer-signature small {
-  font-size: 10px;
 }

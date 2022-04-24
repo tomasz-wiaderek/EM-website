@@ -47,6 +47,7 @@ p {
   margin-bottom: 5%;
 }
 
+
 /* NAVIGATION BAR styles */
 
 nav, footer {
@@ -60,6 +61,10 @@ nav .container {
   align-items: center;
 }
 
+.nav-desktop {
+  display: none;
+}
+
 .logo-a {
   display: block;
   max-height: 100%;
@@ -69,10 +74,6 @@ nav .container {
   max-width: 100%;
   max-height: 90px;
   object-fit: contain;
-}
-
-.nav-desktop {
-  display: none;
 }
 
 .nav-mobile {
@@ -123,11 +124,12 @@ nav .container {
   transform: scale(1.2);
 }
 
+
 /* LANDING PAGE styles */
 
 .landing-page {
   height: calc(100vh - 90px);
-  background-image: url("C:\\Users\\twiad\\PycharmProjects\\EM-website\\media\\backgrounds\\background.jpg");
+  background-image: url("background.jpg");
   background-color: grey;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -214,7 +216,6 @@ nav .container {
   margin-bottom: 2px;
 }
 
-/* The Modal (background) */
 .gallery {
   display: none;
   position: fixed;
@@ -228,7 +229,6 @@ nav .container {
   background-color: black;
 }
 
-/* Modal Content */
 .gallery-content {
   position: relative;
   background-color: #fefefe;
