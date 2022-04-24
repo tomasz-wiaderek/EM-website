@@ -58,7 +58,7 @@ nav .container {
   align-items: center;
 }
 
-.nav-links {
+.nav-desktop {
   width: 35%;
   display: flex;
   justify-content: space-between;
@@ -75,7 +75,7 @@ nav .container {
   object-fit: contain;
 }
 
-.menu-label {
+.nav-mobile {
   display: none;
 }
 
