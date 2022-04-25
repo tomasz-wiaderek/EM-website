@@ -1,10 +1,14 @@
 h1, h3 {
-  margin: 5% auto;
+  margin: 3% auto;
   text-align: center;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .separator {
-  margin: 5% auto;
+  margin-bottom: 5% auto;
 }
 
 .intro-section, .content-section, .end-section {
