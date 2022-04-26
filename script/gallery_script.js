@@ -1,13 +1,13 @@
 const srcsCottonSoft = [
-  'media/new/1.jpg',
-  'media/new/2.jpg',
-  'media/new/3.jpg',
-  'media/new/4.jpg',
-  'media/new/5.jpg',
-  'media/new/6.jpg',
-  'media/new/7.jpg',
-  'media/new/8.jpg',
-  'media/new/9.jpg',
+  'media/cotton_soft/1.jpg',
+  'media/cotton_soft/2.jpg',
+  'media/cotton_soft/3.jpg',
+  'media/cotton_soft/4.jpg',
+  'media/cotton_soft/5.jpg',
+  'media/cotton_soft/6.jpg',
+  'media/cotton_soft/7.jpg',
+  'media/cotton_soft/8.jpg',
+  'media/cotton_soft/9.jpg',
 ]
 
 const srcsModernAndTender = [
