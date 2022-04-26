@@ -1,4 +1,4 @@
-const srcsCotton = [
+const srcsCottonSoft = [
   'media/new/1.jpg',
   'media/new/2.jpg',
   'media/new/3.jpg',
@@ -17,7 +17,6 @@ const srcsModernAndTender = [
   'media/modern_and_tender/4.jpg',
   'media/modern_and_tender/5.jpg',
   'media/modern_and_tender/6.jpg',
-  'media/modern_and_tender/7.jpg',
 ]
 
 const srcsBlueAndRustic = [
@@ -109,7 +108,7 @@ class PortfolioGallery {
 }
 
 
-const cotton = new PortfolioGallery(srcsCotton)
+const cottonSoft = new PortfolioGallery(srcsCottonSoft)
 const modernAndTender = new PortfolioGallery(srcsModernAndTender)
 const blueAndRustic = new PortfolioGallery(srcsBlueAndRustic)
 const greenPatterns = new PortfolioGallery(srcsGreenPatterns)
