@@ -22,12 +22,10 @@ const srcsModernAndTender = [
 const srcsBlueAndRustic = [
   'media/blue_and_rustic/1.jpg',
   'media/blue_and_rustic/2.jpg',
+  'media/blue_and_rustic/3.jpg',
   'media/blue_and_rustic/4.jpg',
   'media/blue_and_rustic/5.jpg',
   'media/blue_and_rustic/6.jpg',
-  'media/blue_and_rustic/7.jpg',
-  'media/blue_and_rustic/8.jpg',
-  'media/blue_and_rustic/9.jpg',
 ]
 
 const srcsGreenPatterns = [
