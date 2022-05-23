@@ -17,6 +17,7 @@ const srcsModernAndTender = [
   'media/modern_and_tender/4.jpg',
   'media/modern_and_tender/5.jpg',
   'media/modern_and_tender/6.jpg',
+  'media/modern_and_tender/7.jpg',
 ]
 
 const srcsBlueAndRustic = [
