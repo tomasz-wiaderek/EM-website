@@ -45,35 +45,42 @@
   max-height: 100%;
   background-color: #2b2b2b;
 }
-
+/*  new styles start here - detail ofer */
 .detail-offer-grid {
   height: calc(100vh - 140px);
-  padding: 4% 0;
+  padding: 0;
   display: grid;
   grid-row-gap: 5%;
   grid-column-gap: 5%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
 
-.detail-offer-grid div {
+/* .detail-offer-grid div {
   height: 100%;
   background-color: #E5E5E5;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .detail-offer-grid a {
   text-decoration: none;
   color: #686867;
 }
 
-.detail-offer-grid div > p {
+/* .detail-offer-grid div > p {
   margin-top: 10%;
+} */
+
+.col-1 {
+  grid-column-start: 2;
+  grid-column-end: 3
 }
 
-.full-width-column {
-  grid-column: 1 / 4;
+.full-width-col {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row: 4;
 }
