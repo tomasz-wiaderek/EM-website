@@ -1,0 +1,67 @@
+
+/* styles of detail_offer/index.html for mobile */
+
+h1, h3 {
+  margin: 5% auto;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.detail-offer-grid {
+  display: grid;
+  row-gap: 1.5em;
+  margin: 1em auto;
+  height: calc(100vh - 170px);
+}
+
+.detail-offer-grid a {
+  text-decoration: none;
+  color: #686867;
+  background-color: #dbdbdb;
+}
+
+.offer-grid-box {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* styles of detail_offer/subpages for mobile */
+
+h4 {
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+ul {
+  list-style: disc;
+  list-style-position: inside;
+  line-height: 1.5;
+}
+
+.surveillance-grid {
+  display: grid;
+  row-gap: 1em;
+}
+
+.col-1, .col-2, .col-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-1 p {
+  font-size: 22px;
+}
+
+.col-3 p {
+  font-size: 18px;
+}
+
+.inside-grid-img {
+  max-width: 100%;
+}
