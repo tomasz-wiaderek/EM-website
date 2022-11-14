@@ -56,6 +56,10 @@ ul {
   line-height: 1.5;
 }
 
+.type-none {
+  list-style-type: none;
+}
+
 .offer-div-box li {
   text-align: center;
 }
@@ -71,14 +75,21 @@ ul {
   justify-content: center;
 }
 
-.col-1 p {
+.col-1 > p {
   font-size: 22px;
 }
 
-.col-3 p {
+.col-3 > p {
   font-size: 18px;
 }
 
 .inside-grid-img {
   max-width: 100%;
+}
+
+.followup-link {
+  text-decoration: none;
+  color: #686867;
+  font-size: 26px;
+  font-weight: 200;
 }

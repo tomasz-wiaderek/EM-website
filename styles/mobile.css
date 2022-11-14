@@ -124,11 +124,6 @@ nav .container {
   font-weight: 200;
 }
 
-.nav-link:hover {
-  transform: scale(1.2);
-}
-
-
 /* LANDING PAGE styles */
 
 .landing-page {
