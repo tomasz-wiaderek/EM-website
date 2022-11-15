@@ -1,6 +1,10 @@
 
 /* main styles */
 
+main {
+  min-height: 623px;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;

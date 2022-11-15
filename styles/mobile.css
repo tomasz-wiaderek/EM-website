@@ -5,6 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  min-height: calc(100vh - 210px);
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif, Arial, Verdana;
   color: #686867;

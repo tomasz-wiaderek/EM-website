@@ -68,7 +68,7 @@ ul {
   text-align: center;
 }
 
-.surveillance-grid {
+.project-grid {
   display: grid;
   row-gap: 1em;
 }

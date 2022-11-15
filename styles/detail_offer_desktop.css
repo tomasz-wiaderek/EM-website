@@ -42,6 +42,10 @@
   grid-row-end: 6;
 }
 
+.row-end-7 {
+  grid-row-end: 7;
+}
+
 .row-start-5 {
   grid-row-start: 5;
 }
